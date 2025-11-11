@@ -1,0 +1,19 @@
+.terms-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.terms-container h1, .terms-container h2 {
+    color: #333;
+}
+
+.terms-container .meta {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.terms-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}

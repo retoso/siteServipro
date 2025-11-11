@@ -1,0 +1,8 @@
+.app-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  padding-bottom: 4rem; /* Altura do rodapé */
+}

@@ -1,0 +1,114 @@
+.about-container {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-header p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.about-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+}
+
+.about-section p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+}
+
+.tech-stack .tech-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.tech-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #007bff;
+}
+
+.tech-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.approach ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}
+
+.approach li {
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.approach li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+
+.cta-section {
+    text-align: center;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cta-section h2 {
+    color: #fff;
+    border: none;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #f0f0f0;
+}

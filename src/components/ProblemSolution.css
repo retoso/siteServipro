@@ -1,0 +1,23 @@
+.problemSolution {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.problemSolution h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.problemSolution > div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.problemSolution > div > div {
+    width: 45%;
+}
+
+.problemSolution h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}

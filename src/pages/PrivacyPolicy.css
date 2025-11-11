@@ -1,0 +1,19 @@
+.privacy-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.privacy-container h1, .privacy-container h2 {
+    color: #333;
+}
+
+.privacy-container .meta {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.privacy-container ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
