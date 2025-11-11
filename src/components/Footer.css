@@ -1,20 +1,129 @@
-.footer-container {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+/* src/components/Footer.css */
+
+.footer {
+    background-color: var(--secondary-color);
+    color: #E0E0E0; /* Lighter gray for better contrast on dark bg */
+    padding-top: 6rem; /* More padding for the clip-path effect */
+    font-size: 0.95rem;
+    position: relative;
+    /* Creates a subtle angled top edge */
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem; /* Increased gap */
+}
+
+.footer-column h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    color: var(--background-color); /* White titles */
+    position: relative;
+}
+
+.footer-column h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 35px; /* Shorter, more stylish underline */
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.footer-column p,
+.footer-column .footer-links a {
+    line-height: 1.8; /* More breathable line spacing */
+    color: #bdc3c7; /* Keeping this soft color for links and text */
+    text-decoration: none;
+    transition: all var(--transition-speed) ease;
 }
 
 .footer-links {
-    margin-top: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.footer-links a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
+.footer-links li {
+    margin-bottom: 0.8rem;
 }
 
 .footer-links a:hover {
+    color: var(--background-color); /* Hover to white */
+    transform: translateX(5px); /* Subtle slide effect */
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--background-color);
+    font-size: 1.2rem;
+    transition: background-color var(--transition-speed) ease, transform var(--transition-speed) ease;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    /* Using an rgba layer to be slightly darker than the main footer */
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 1.5rem 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--footer-text-color);
+}
+
+.footer-bottom a {
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.footer-bottom a:hover {
     text-decoration: underline;
+    text-decoration-color: var(--primary-color);
+    text-underline-offset: 4px;
+}
+
+/* Center underline on mobile */
+@media (max-width: 768px) {
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-column h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
 }

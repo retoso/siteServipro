@@ -1,0 +1,67 @@
+.solutions-page {
+  padding: 4rem 2rem;
+  background-color: #121212;
+  color: #FFFFFF;
+  min-height: 100vh;
+}
+
+.solutions-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.solutions-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #8E24AA, #42A5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.solutions-header p {
+  font-size: 1.2rem;
+  color: #B0B0B0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solution-card {
+  background: #1E1E1E;
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.solution-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.3);
+}
+
+.solution-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+}
+
+.solution-card h3 {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  margin-bottom: 1rem;
+}
+
+.solution-card p {
+  font-size: 1rem;
+  color: #B0B0B0;
+  line-height: 1.6;
+}

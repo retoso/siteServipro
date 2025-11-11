@@ -1,51 +1,65 @@
 
 # Visão Geral do Projeto de Reformulação
 
-Este documento descreve o plano de ação para a recriação do site Servipro, com o objetivo de reposicionar a marca para um consultor de automação focado em n8n, IA e integrações.
+Este documento descreve o plano de ação para a recriação do site ServiPro, com o objetivo de reposicionar a marca para um consultor de automação focado em n8n, IA e integrações.
 
 ## Estrutura de Navegação e Componentes
 
-O site será uma Single Page Application (SPA) construída em React. A navegação será gerenciada pela biblioteca `react-router-dom`.
+O site é uma Single Page Application (SPA) construída em React. A navegação é gerenciada pela biblioteca `react-router-dom`.
 
 - **Home:** Página principal com uma visão geral dos serviços.
 - **Sobre:** Apresentação do consultor.
-- **Soluções:** Detalhes sobre as soluções de automação (a ser criada).
-- **FAQ:** Perguntas frequentes (a ser criada).
-- **Contato:** Formulário e informações de contato (a ser criada).
-- **Termos de Uso:** Página com os termos de uso (a ser criada).
-- **Política de Privacidade:** Página com a política de privacidade (a ser criada).
+- **Soluções:** Detalhes sobre as soluções de automação.
+- **Blog:** Artigos e conteúdo sobre automação.
+- **FAQ:** Perguntas frequentes.
+- **Contato:** Formulário e informações de contato.
+- **Política de Privacidade:** Página com a política de privacidade.
 
 ## Plano de Ação
 
 ### Passo 1: Configuração do Ambiente e Estrutura Inicial
 
-- **Concluído:** Instalação do `react-router-dom` para gerenciar a navegação.
-- **Concluído:** Reestruturação do projeto para incluir pastas para componentes, páginas e assets.
-- **Concluído:** Criação da estrutura básica do `App.jsx` com o roteamento inicial.
-- **Concluído:** Criação do componente `Navbar` e seu respectivo CSS.
-- **Concluído:** Criação da página `About.jsx`.
+- **Concluído:** Instalação do `react-router-dom`.
+- **Concluído:** Reestruturação do projeto em pastas para componentes, páginas e assets.
+- **Concluído:** Criação da estrutura básica do `App.jsx` com o roteamento.
 
 ### Passo 2: Construção da Página Principal (Home)
 
-- **Concluído:** Criação do componente `Hero` e seu respectivo CSS.
-- **Concluído:** Criação do componente `ProblemSolution` e seu respectivo CSS.
-- **Concluído:** Criação do componente `Tools` e seu respectivo CSS.
-- **Concluído:** Criação do componente `SecondaryCTA` e seu respectivo CSS.
-- **Concluído:** Criação da página `Home.jsx` que integra os componentes acima.
+- **Concluído:** Criação dos componentes `Hero`, `ProblemSolution`, `Tools`, `SecondaryCTA`.
+- **Concluído:** Integração dos componentes na página `Home.jsx`.
 
-### Passo 3: Criação das Páginas Adicionais (Próximos Passos)
+### Passo 3: Criação das Páginas Estruturais
 
-- Criar a página "Soluções" detalhando os serviços de automação.
-- Criar a página "FAQ" com as perguntas frequentes.
-- Criar a página "Contato" com um formulário de contato.
-- Criar as páginas "Termos de Uso" e "Política de Privacidade".
+- **Concluído:** Criação da página `About.jsx`.
+- **Concluído:** Criação da página `Solutions.jsx`.
+- **Concluído:** Criação da página `Blog.jsx`.
+- **Concluído:** Criação da página `FAQ.jsx`.
+- **Concluído:** Criação da página `Contact.jsx`.
+- **Concluído:** Criação da página `Privacy.jsx`.
 
-### Passo 4: Estilização e Design
+### Passo 4: Implementação de Componentes Globais
 
-- **Em Andamento:** Refinar o CSS de cada componente para um design moderno e responsivo.
+- **Concluído:** Criação e estilização do componente `Navbar` com navegação responsiva.
+- **Concluído:** Criação e estilização do componente `Footer` com layout de colunas.
+- **Concluído:** Integração de todas as páginas no roteador principal e na navegação.
 
-### Passo 5: Revisão e Otimização
+### Passo 5: Revisão e Finalização
 
-- Revisar todo o conteúdo e a funcionalidade.
-- Otimizar o SEO com o uso correto de headings e metadados.
-- Testar a performance e o tempo de carregamento.
+- **Concluído:** Execução do `eslint` para garantir a qualidade do código.
+- **Concluído:** Geração da build de produção.
+- **Concluído:** Implantação da primeira versão no Firebase Hosting.
+
+### Passo 6: Redesenho Visual e Implementação da Nova Identidade (Em Andamento)
+
+- **Objetivo:** Aplicar a nova paleta de cores e a identidade visual de "interface viva" para aumentar a personalidade e o profissionalismo do site.
+- **Paleta de Cores:**
+  - **Primária:** Azul Elétrico (`#007BFF`) para elementos de ação.
+  - **Secundária:** Cinza Antracite (`#212529`) para textos e cabeçalhos.
+  - **Fundo:** Branco Puro (`#FFFFFF`) e Off-white (`#F8F9FA`).
+  - **Apoio:** Verde-menta (`#00C896`) para indicadores de sucesso.
+  - **Alerta/Ação:** Laranja (`#FF9F43`) para CTAs secundários e notificações.
+- **Conceito Visual:** Implementar a ideia de "interface viva" com animações suaves em transições e um efeito de brilho sutil (neon) em elementos com a cor primária para dar a sensação de que a automação está sempre ativa.
+- **Ações:**
+  - Modificar todos os arquivos CSS para refletir a nova paleta.
+  - Adicionar transições e animações para uma experiência de usuário mais fluida.
+  - Aplicar um `box-shadow` com a cor primária em botões e links para criar o efeito de brilho.

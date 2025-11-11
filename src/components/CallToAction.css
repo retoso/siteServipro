@@ -1,0 +1,81 @@
+/* src/components/CallToAction.css */
+.cta-section {
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+    border-top: 1px solid var(--border-color);
+  }
+  
+  .cta-header {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+  }
+  
+  .cta-header h2 {
+    font-size: 2.8rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .cta-header p {
+    font-size: 1.2rem;
+    color: var(--text-light-color);
+  }
+  
+  .cta-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .cta-card {
+    background: var(--surface-color);
+    padding: 2.5rem;
+    border-radius: 20px;
+    max-width: 400px;
+    text-align: center; /* Corrected from left to center */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all flex items */
+  }
+  
+  .cta-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+  }
+  
+  .cta-card p {
+    font-size: 1.1rem;
+    color: var(--text-light-color);
+    margin-bottom: 2rem;
+    flex-grow: 1;
+  }
+  
+  .cta-card .btn {
+    width: auto; /* Allow button to size naturally */
+    min-width: 200px; /* Ensure a good minimum width */
+  }
+  
+  .cta-card-primary {
+    background: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+  }
+  
+  .cta-card-primary h3 {
+    color: var(--background-color);
+  }
+  
+  .cta-card-primary p {
+    color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .cta-card-primary .btn-primary {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+  }
+  

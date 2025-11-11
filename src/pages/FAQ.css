@@ -1,51 +1,76 @@
-.faq-container {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #f9f9f9;
-  border-radius: 8px;
+.faq-page .header {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.faq-title {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #333;
+.faq-page .header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
 }
 
-.faq-category h2 {
-  border-bottom: 2px solid #eee;
-  padding-bottom: 10px;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
-  color: #555;
+.faq-page .header p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
 .faq-item {
-  border-bottom: 1px solid #ddd;
-  padding: 15px 0;
-  cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e9ecef;
+    overflow: hidden; /* Ensures the border-radius is respected by children */
 }
 
 .faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    width: 100%;
+    border: none;
+    background: none;
+    text-align: left;
 }
 
-.faq-question h3 {
-  margin: 0;
-  font-size: 1.1rem;
-  color: #333;
+.faq-question:hover {
+    background-color: #f8f9fa;
 }
 
-.faq-question span {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #007bff;
+.faq-arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    transition: transform 0.3s ease;
 }
 
 .faq-answer {
-  margin-top: 15px;
-  color: #666;
-  line-height: 1.6;
+    padding: 0 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+}
+
+.faq-answer p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #555;
+    padding-bottom: 1.5rem;
+    margin: 0;
+}
+
+/* Style for when the FAQ item is open */
+.faq-item.open .faq-arrow {
+    transform: rotate(90deg);
+}
+
+.faq-item.open .faq-answer {
+    max-height: 500px; /* Adjust as needed */
+    transition: max-height 0.5s ease-in, padding 0.5s ease-in;
 }

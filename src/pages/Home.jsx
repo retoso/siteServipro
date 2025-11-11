@@ -1,8 +1,9 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import ProblemSolution from '../components/ProblemSolution';
+import CallToAction from '../components/CallToAction';
 import Tools from '../components/Tools';
-import SecondaryCTA from '../components/SecondaryCTA';
+import FAQTeaser from '../components/FAQTeaser'; // Renamed from SecondaryCTA
 
 const Home = () => {
   return (
@@ -10,7 +11,8 @@ const Home = () => {
       <Hero />
       <ProblemSolution />
       <Tools />
-      <SecondaryCTA />
+      <CallToAction />
+      <FAQTeaser />
     </div>
   );
 };

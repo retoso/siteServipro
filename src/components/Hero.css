@@ -1,24 +1,21 @@
 .hero {
-    background-color: #f8f9fa;
-    padding: 4rem 2rem;
+    background-color: var(--background-alt-color);
+    padding: 5rem 2rem;
     text-align: center;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 800;
     margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .hero p {
     font-size: 1.25rem;
-    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: 0 auto 2.5rem auto;
+    color: var(--text-light-color);
 }
 
-.hero button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
+/* The button styling will now be handled by global classes in App.css */

@@ -1,0 +1,63 @@
+/* O seletor .solutions-page foi removido para herdar o fundo global */
+
+.solutions-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.solutions-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  background: -webkit-linear-gradient(45deg, #8E24AA, #42A5F5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.solutions-header p {
+  font-size: 1.2rem;
+  color: var(--text-light-color, #5a5a5a); /* Cor ajustada */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.solution-card {
+  background: #FFFFFF; /* Fundo branco */
+  border-radius: 15px;
+  padding: 2rem;
+  border: 1px solid #E0E0E0; /* Borda cinza clara */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.solution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada no hover */
+}
+
+.solution-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1.5rem;
+}
+
+.solution-card h3 {
+  font-size: 1.8rem;
+  color: var(--secondary-color, #212529); /* Cor do título ajustada */
+  margin-bottom: 1rem;
+}
+
+.solution-card p {
+  font-size: 1rem;
+  color: var(--text-light-color, #5a5a5a); /* Cor do parágrafo ajustada */
+  line-height: 1.6;
+}

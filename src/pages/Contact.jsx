@@ -1,16 +1,18 @@
 import React from 'react';
-import './Contact.css';
+import '../styles/Contact.css';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <h1 className="contact-title">Entre em Contato</h1>
-      <form className="contact-form">
-        <input type="text" placeholder="Nome" />
-        <input type="email" placeholder="E-mail" />
-        <textarea placeholder="Mensagem"></textarea>
-        <button type="submit">Enviar</button>
-      </form>
+    <div>
+      <header className="page-header">
+        <h1>Entre em Contato</h1>
+      </header>
+      <main className="page-content">
+        <p>
+          Adoraríamos ouvir de você! Seja para tirar uma dúvida, solicitar uma demonstração ou discutir um projeto, nossa equipe está pronta para ajudar. Preencha o formulário abaixo ou utilize um dos nossos canais de atendimento.
+        </p>
+        {/* O formulário de contato será adicionado aqui em uma futura iteração */}
+      </main>
     </div>
   );
 };
