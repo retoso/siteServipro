@@ -1,4 +1,7 @@
-/* O seletor .solutions-page foi removido para herdar o fundo global */
+.solutions-page {
+  background-color: #F8F9FA; /* Fundo claro, conforme solicitado */
+  padding: 4rem 2rem; /* Adiciona espaçamento para um layout mais arejado */
+}
 
 .solutions-header {
   text-align: center;
@@ -16,7 +19,7 @@
 
 .solutions-header p {
   font-size: 1.2rem;
-  color: var(--text-light-color, #5a5a5a); /* Cor ajustada */
+  color: #5a5a5a; /* Cor escura para boa legibilidade em fundo claro */
   max-width: 800px;
   margin: 0 auto;
 }
@@ -30,18 +33,18 @@
 }
 
 .solution-card {
-  background: #FFFFFF; /* Fundo branco */
+  background: #FFFFFF; /* Cards brancos para se destacarem no fundo cinza */
   border-radius: 15px;
   padding: 2rem;
-  border: 1px solid #E0E0E0; /* Borda cinza clara */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Sombra suave */
+  border: 1px solid #E0E0E0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .solution-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada no hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .solution-icon {
@@ -52,12 +55,12 @@
 
 .solution-card h3 {
   font-size: 1.8rem;
-  color: var(--secondary-color, #212529); /* Cor do título ajustada */
+  color: #212529; /* Título do card escuro */
   margin-bottom: 1rem;
 }
 
 .solution-card p {
   font-size: 1rem;
-  color: var(--text-light-color, #5a5a5a); /* Cor do parágrafo ajustada */
+  color: #5a5a5a; /* Parágrafo do card escuro */
   line-height: 1.6;
 }

@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #007BFF; /* Azul Elétrico */
     --primary-glow: rgba(0, 123, 255, 0.4);
@@ -103,4 +104,8 @@ a:hover {
     transform: translateY(-2px);
 }
 
-/* O media query antigo para page-container não é mais necessário com clamp() */
+/* CLASSE MESTRA PARA FORÇAR O TEMA CLARO */
+body.light-theme-override {
+    color-scheme: light !important;
+    background-color: #F8F9FA !important;
+}

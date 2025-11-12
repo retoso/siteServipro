@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../styles/Solutions.css';
 
 // Importando os ícones que já temos
@@ -31,6 +31,17 @@ const solutions = [
 ];
 
 const Solutions = () => {
+  // Efeito para adicionar e remover a classe de override do tema
+  useEffect(() => {
+    // Adiciona a classe ao body quando o componente é montado
+    document.body.classList.add('light-theme-override');
+
+    // Função de limpeza que remove a classe quando o componente é desmontado
+    return () => {
+      document.body.classList.remove('light-theme-override');
+    };
+  }, []); // Array vazio garante que o efeito rode apenas ao entrar/sair da página
+
   return (
     <div className="solutions-page">
       <header className="solutions-header">

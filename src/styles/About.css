@@ -1,0 +1,140 @@
+/* src/styles/About.css */
+
+.about-page {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.about-header {
+  text-align: center;
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+  /* Removemos o fundo azul e usamos um gradiente sutil ou cor de fundo do tema */
+  background: linear-gradient(120deg, var(--background-color) 0%, var(--background-alt-color) 100%);
+}
+
+.about-header-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.about-header-content .subtitle {
+  font-size: 1.3rem;
+  color: var(--text-light-color);
+  max-width: 650px;
+  margin: 0.5rem auto 0;
+}
+
+.about-main-content {
+  padding: 0 1rem;
+}
+
+/* Seção da História */
+.history-section {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.history-section h2 {
+  font-size: 2.2rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.history-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.history-content p {
+  margin-bottom: 1.5rem;
+}
+
+.history-content strong {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+/* Container para Missão, Visão, Valores */
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-card {
+  background-color: #fff; /* Fundo branco para os cards */
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.value-card-icon {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.value-card h3 {
+  font-size: 1.6rem;
+  color: var(--secondary-color);
+  margin: 0 0 1rem 0;
+}
+
+.value-card p, .value-card ul {
+  color: var(--text-light-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.value-card ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.value-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.value-card ul li strong {
+  color: var(--text-color);
+}
+
+/* Animação de Fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .about-header-content h1 {
+    font-size: 2.5rem;
+  }
+  .about-header-content .subtitle {
+    font-size: 1.1rem;
+  }
+}
