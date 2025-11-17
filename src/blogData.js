@@ -1,15 +1,17 @@
 const blogData = [
   {
-    slug: 'o-que-e-n8n',
-    title: 'O que é n8n e por que ele é a ferramenta de automação do futuro?',
-    author: 'Renato Tonelli de Souza',
-    date: '2024-07-20',
-    excerpt: 'Descubra o que é o n8n, a plataforma de automação de fluxo de trabalho que permite conectar qualquer aplicativo com qualquer outro, sem a necessidade de código complexo.',
-    imageUrl: 'https://images.unsplash.com/photo-1664575196412-ed801e833989?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    slug: "o-que-e-n8n",
+    title: "O que é n8n e por que ele é a ferramenta de automação do futuro?",
+    author: "Renato Tonelli de Souza",
+    date: "2025-07-20",
+    excerpt:
+      "Descubra o que é o n8n, a plataforma de automação de fluxo de trabalho que permite conectar qualquer aplicativo com qualquer outro, sem a necessidade de código complexo.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1664575196412-ed801e833989?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: `
       <h2>O que exatamente é o n8n?</h2>
       <p>O n8n (pronuncia-se "n-eight-n") é uma plataforma de automação de fluxo de trabalho de código aberto e auto-hospedável. Pense nele como um "canivete suíço" digital que permite conectar qualquer aplicativo com qualquer outro, usando uma interface visual de "nós".</p>
-      <img src="https://images.unsplash.com/photo-1611095562057-2e70193e937c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Interface visual de automação" style="width:100%; border-radius:10px; margin: 1.5rem 0;" />
+      <img src="https://drive.google.com/file/d/11dHnRiIt7XNndziWD3Q-5U0FJ3dSGbrQ/view?usp=sharing" alt="Interface visual de automação" style="width:100%; border-radius:10px; margin: 1.5rem 0;" />
       <p>Em vez de escrever código complexo para integrar, por exemplo, seu CRM com seu sistema de e-mail marketing, você pode simplesmente arrastar e soltar nós, configurá-los e conectá-los. Cada nó representa um aplicativo ou uma função (como ler um arquivo, enviar um e-mail, etc.).</p>
       
       <h2>Principais Vantagens do n8n</h2>
@@ -26,12 +28,15 @@ const blogData = [
     `,
   },
   {
-    slug: 'ia-para-pequenas-empresas',
-    title: 'Como a Inteligência Artificial pode revolucionar sua pequena empresa',
-    author: 'Renato Tonelli de Souza',
-    date: '2024-07-18',
-    excerpt: 'A Inteligência Artificial não é mais exclusividade de gigantes da tecnologia. Veja como ferramentas de IA podem otimizar o marketing, o atendimento e as operações da sua pequena empresa.',
-    imageUrl: 'https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    slug: "ia-para-pequenas-empresas",
+    title:
+      "Como a Inteligência Artificial pode revolucionar sua pequena empresa",
+    author: "Renato Tonelli de Souza",
+    date: "2025-07-18",
+    excerpt:
+      "A Inteligência Artificial não é mais exclusividade de gigantes da tecnologia. Veja como ferramentas de IA podem otimizar o marketing, o atendimento e as operações da sua pequena empresa.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: `
       <h2>IA: Uma Aliada para o Crescimento</h2>
       <p>Muitos donos de pequenas e médias empresas acreditam que a Inteligência Artificial (IA) é algo distante e caro, reservado para as gigantes da tecnologia. A realidade, no entanto, é que a IA se tornou mais acessível do que nunca e pode ser uma ferramenta poderosa para otimizar operações, melhorar o marketing e oferecer um atendimento ao cliente excepcional.</p>
@@ -49,12 +54,14 @@ const blogData = [
     `,
   },
   {
-    slug: 'automatizar-processos-financeiros',
-    title: '3 Processos Financeiros que Você Deveria Automatizar Hoje',
-    author: 'Renato Tonelli de Souza',
-    date: '2024-07-15',
-    excerpt: 'Libere sua equipe de tarefas manuais e reduza erros. Descubra 3 processos financeiros cruciais que podem ser facilmente automatizados, melhorando a eficiência e a precisão.',
-    imageUrl: 'https://images.unsplash.com/photo-1642792969963-83a3d55b0a34?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    slug: "automatizar-processos-financeiros",
+    title: "3 Processos Financeiros que Você Deveria Automatizar Hoje",
+    author: "Renato Tonelli de Souza",
+    date: "2024-07-15",
+    excerpt:
+      "Libere sua equipe de tarefas manuais e reduza erros. Descubra 3 processos financeiros cruciais que podem ser facilmente automatizados, melhorando a eficiência e a precisão.",
+    imageUrl:
+      "https://images.unsplash.com/photo-1642792969963-83a3d55b0a34?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     content: `
       <h2>O Custo Oculto do Trabalho Manual</h2>
       <p>O departamento financeiro é o coração de qualquer empresa, mas muitas vezes ele está sobrecarregado com tarefas manuais, repetitivas e propensas a erros. A automação não é apenas uma questão de eficiência, mas de precisão e segurança.</p>
