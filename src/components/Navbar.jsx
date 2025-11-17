@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
@@ -51,6 +52,7 @@ const Navbar = () => {
                 <ul className={`navbar-menu ${isMobileMenuOpen ? 'open' : ''}`}>
                     <li><NavLink to="/" end className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMobileMenu}>Home</NavLink></li>
                     <li><NavLink to="/solutions" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMobileMenu}>Soluções</NavLink></li>
+                    <li><NavLink to="/fluxos" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMobileMenu}>Fluxos</NavLink></li>
                     <li><NavLink to="/blog" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMobileMenu}>Blog</NavLink></li>
                     <li><NavLink to="/sobre" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMobileMenu}>Sobre</NavLink></li>
                     <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''} onClick={closeMobileMenu}>FAQ</NavLink></li>

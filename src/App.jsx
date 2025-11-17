@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -11,13 +12,14 @@ import About from './pages/About';
 import FAQ from './pages/FAQ';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
-import ScrollToTop from './components/ScrollToTop'; // Importa o novo componente
+import Workflows from './pages/Workflows'; // Importa a nova página
+import ScrollToTop from './components/ScrollToTop';
 import './App.css';
 
 function App() {
   return (
     <Router>
-      <ScrollToTop /> {/* Garante que a rolagem vá para o topo em cada navegação */}
+      <ScrollToTop />
       <div className="App">
         <Navbar />
         <main className="main-content page-container">
@@ -31,6 +33,7 @@ function App() {
             <Route path="/faq" element={<FAQ />} />
             <Route path="/politica-de-privacidade" element={<Privacy />} />
             <Route path="/termos-de-uso" element={<Terms />} />
+            <Route path="/fluxos" element={<Workflows />} /> {/* Adiciona a nova rota */}
           </Routes>
         </main>
         <Footer />
